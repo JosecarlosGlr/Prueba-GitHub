@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Europa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body { background-image: url("https://www.2playbook.com/uploads/s1/39/92/67/lifter-crew-valencia-8.jpeg");
+        background-attachment: fixed;
+        background-size: cover;
+        }
+        /********************************************
+            BARRA DE NAVEGACIÓN
+        ********************************************/
+        nav {  background-color: black; 
+            display: flex;
+            justify-content: space-around; 
+            position: sticky;
+            top:0;
+        }
+
+        nav a { text-decoration: none;
+                color:white; 
+                padding: 20px;       
+        }
+        nav a:hover { color:yellow; font-weight: bold;text-shadow: 3px 3px 3px black;}
+        /********************************************
+           HEADER ( CABECERA )
+        ********************************************/
+        header {
+            background-image: url("https://media.revistagq.com/photos/65b12cd1df908a3c3a4d7373/16:9/w_2560%2Cc_limit/fitness%2520portada.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        header h1 { color:yellow;
+             font-size: 4em;}
+        header h2 { color:white}
+        #caja-titulos { 
+            text-align: center;
+            text-shadow: 3px 3px 3px black;
+        }
+        #contenedor-servicios {
+            display: flex;
+            padding: 90px;
+            justify-content: space-around;
+        }
+        .titulo {
+            color:yellow;
+            text-align: center;
+            text-shadow: 2px 2px 3px black;
+        }
+        section {
+            padding: 20px
+        }
+        footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 20px;
+        }
+        footer h2 { font-size: .9em;}
+        #contacte {
+            width: 100%;
+            border-bottom: 2px solid yellow;
+            font-size: 1.4em;
+            
+        }
+        #enlaces a {color:white;
+        text-decoration: none; }
+        #enlaces a:hover { font-size: 2em; color: yellow;}
+        footer div {padding: 10px;
+        width: 33%;
+    }
+        #contenedor-clientes {
+            display: flex;
+            justify-content: space-around;
+            border:2px solid black ;
+            padding: 10px;
+            background-color: white;
+        }
+        #contenedor-clientes article{
+            width: 30%;
+            text-align: center;
+            border: 2px solid yellow;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        #contenedor-clientes article h3 { font-style: italic;}
+        #contenedor-clientes article img { width: 40%;border-radius: 50%;padding: 10px;}
+        #izquierda, #derecha { width: 40%;}
+        #derecha{
+            border: solid black 4px;
+            border-radius: 5%;
+            background-color: white;
+            padding: 15px;
+        }
+        /********************************************
+           RESPONSIVE
+        ********************************************/
+
+
+        @media screen and (max-width:500px){
+            header{
+                background-image: url("https://static.wixstatic.com/media/9fc79f_888e854622a94f029a38e6567de32d9d~mv2.png/v1/fill/w_568,h_378,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9fc79f_888e854622a94f029a38e6567de32d9d~mv2.png");
+            }
+            header h2{
+            font-size: 2em;
+            }
+            nav{
+                background-color: black;
+                display: block;
+                text-align: center;
+                font-size: 1em;
+                position: auto;
+                top: auto;
+                color: white;
+            }
+
+            nav a{
+                display: block;
+            }
+
+            #contenedor-servicios {
+                display: block;
+            }
+
+            #izquierda, #derecha {
+                width: 90%;
+                margin: auto;
+                display: block;
+                margin-top: 20px;
+            }
+            #contenedor-clientes {
+                display: block;
+            }
+
+            #contenedor-clientes article{
+                width: 100%;    
+            }
+            footer{
+                display: block;
+            }
+            footer div{
+                display: block;
+                width: 100%;
+            }
+        }/* fin de @media */
+    </style>
+    <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="caja-titulos">
+            <h1>Gimnasio Europa</h1>
+            <h2>Estrena tu cuerpo</h2>
+            <i class="fa-solid fa-dumbbell"></i>
+        </div>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#clases">Clases</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <section id="servicios">
+        <h1 class="titulo">Servicios</h1>
+        <div id="contenedor-servicios">
+
+           
+            <iframe id="izquierda" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d694.4261577554763!2d-3.1279850303997727!3d39.40669889822621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd69ad1ccecc423b%3A0x2b6e890b25c5bcdd!2sC.%20Mayorazgo%2C%2014-38%2C%2013610%20Campo%20de%20Criptana%2C%20Ciudad%20Real!5e1!3m2!1ses!2ses!4v1736795875678!5m2!1ses!2ses" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="derecha">
+                <h2>Dónde estamos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Assumenda hic quae eaque neque labore nisi beatae. Molestias 
+                    quia deserunt aliquam, porro numquam aperiam et non enim nam aspernatur quo culpa.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Assumenda hic quae eaque neque labore nisi beatae. Molestias 
+                    quia deserunt aliquam, porro numquam aperiam et non enim nam aspernatur quo culpa.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Assumenda hic quae eaque neque labore nisi beatae. Molestias 
+                    quia deserunt aliquam, porro numquam aperiam et non enim nam aspernatur quo culpa.</p>
+            </div>
+        </div>
+    </section>
+    <section id="opiniones-clientes">
+        <h1 class="titulo">Opiniones de nuestros clientes</h1>
+        <div id="contenedor-clientes">
+            <article>
+                <img src="https://15f8034cdff6595cbfa1-1dd67c28d3aade9d3442ee99310d18bd.ssl.cf3.rackcdn.com/uploaded_thumb_big/a20a8b7a06b5a726408f68df59ba9c3d/fotografia_de_carnet_y_pasaporte_yenes_fotografos.png" alt="">
+                <h3>"Precio insuperable"</h3>
+                <p>Lucia Lopéz</p>
+            </article>
+            <article>
+                <img src="https://b282c5de4f50ed30d5ce-25e9f6b52714e6c3d4dbb7e330152014.ssl.cf3.rackcdn.com/uploaded_thumb_medium/409d16e4bfdd9d56bbcdede012883dd9/7853533_carnet_h.jpg">
+                <h3>"Servicio cercano"</h3>
+                <p>Alvaro Martín</p>
+            </article>
+            <article>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0mdBEBD8peH1nhwYiiGljeK3YyBEB7W2sg&s" alt="">
+
+                <h3>"Instalaciones limpias"</h3>
+                <p>Pepe Martínez</p>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div id="contacte">
+            Contacte con nosotros
+        </div>
+        <div id="enlaces">
+            <h2>Enlaces</h2>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#">Twiter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div id="estamos-en">
+            <h2>Estamos en</h2>
+            <p>Calle Mayorazgo</p>
+            <p>13610 Campo de Criptana</p>
+        </div>
+        <div id="email">
+            <h2>E-mail</h2>
+            <p>gimnasioeuropa@gmail.com</p>
+        </div>
+
+    </footer>
+</body>
+</html>
